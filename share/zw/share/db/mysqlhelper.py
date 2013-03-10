@@ -42,7 +42,6 @@ class MySQLDBHelper(object):
                      , port=self._port, charset=self._charset
 #                     , dsn=self._dsn
                      , **kws)
-            print self.pool
             return self.connection(creator)
         
     def execute(self, operation , parameters=None):
